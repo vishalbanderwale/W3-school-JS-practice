@@ -8,5 +8,13 @@
   <body>
     <h1>hello world</h1>
     <p id="para">welcome to js</p>
-    <button type="button" onclick='document.getElementById("para").innerHTML="hello js"'>click me</button>
+    <!-- <button type="button" onclick='document.getElementsByClassName("para")[0].innerHTML="hello js"'>click me</button> -->
+     <!--className returns an array so using [0]-->
+
+    <!--for id -->
+    <!--js accept both "" and ''-->
+    <!-- <button type="button" onclick="document.getElementById('para').innerHTML='hello js'">click me</button>-->
+     <button type="button" onclick='document.getElementById("para").innerHTML="hello js"'>click me</button>
+     <button type="button" onclick='document.getElementById("para").style.backgroundColor=" blue"'>click me</button>
+     <button type="button" onclick="document.getElementById('para').style.fontSize='2rem'">click me</button>
 </html>
