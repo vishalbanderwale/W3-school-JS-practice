@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>js demo</title>
+ 
+    <!--script can be placed in head or body -->
+    <!--Placing scripts at the bottom of the <body> element improves the display speed, because script interpretation slows down the display.-->
+    <script>
+        function btn(){
+            document.getElementById('para').innerHTML="function changed"
+        }
+    </script>
   </head>
   <body>
     <h1>hello world</h1>
@@ -14,7 +22,30 @@
     <!--for id -->
     <!--js accept both "" and ''-->
     <!-- <button type="button" onclick="document.getElementById('para').innerHTML='hello js'">click me</button>-->
+    
      <button type="button" onclick='document.getElementById("para").innerHTML="hello js"'>click me</button>
      <button type="button" onclick='document.getElementById("para").style.backgroundColor=" blue"'>click me</button>
      <button type="button" onclick="document.getElementById('para').style.fontSize='2rem'">click me</button>
+     <button type="button" onclick="btn()">fun btn</button>
+
+     <!--from external file calling js : <script src="index.js"></script-->
+        <!--You can place an external script reference in <head> or <body> as you like.-->
+
+
+            <!--JavaScript can "display" data in different ways:
+
+Writing into an HTML element, using innerHTML.
+Writing into the HTML output using document.write().
+Writing into an alert box, using window.alert().
+Writing into the browser console, using console.log().-->
+
+<!--we can skip window : simply write as alert("sonu")-->
+<!--document.write: delete all exisiting html elements: shd be used for only testing-->
+<!--For debugging purposes, you can call the console.log() method in the browser to display data.-->
+<script>
+    document.getElementById('para').style.fontFamily="cursive"
+    document.write(1+1);
+    window.alert("vishal");
+    console.log("vishal singh")
+</script>
 </html>
