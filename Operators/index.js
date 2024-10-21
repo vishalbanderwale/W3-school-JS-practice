@@ -1,4 +1,4 @@
-//Operators: used to perform mathmatical operations
+//Operators: used to perform mathmatical and logical operations
 /*
 1)arthimetic opeartor: addition(+),subtraction(-),multiplication(*),division(/: gives quotion),
 modulus(%: gives reminder),++(increment),(--)decrement, , exponentiation operator (**):let x=5,let z=x**2=>5 power 2 (25)
