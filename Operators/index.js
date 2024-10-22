@@ -11,8 +11,23 @@ modulus(%: gives reminder),++(increment),(--)decrement, , exponentiation operato
 5)string operator: "hello" + "world" =hello world(concatenate) : When used on strings,
  the (+) operator is called the concatenation operator.
  the primary string operator is the concatenation operator (+), which is used to join two or more strings together.
-6)typeof :Returns the type of a variable
+6)typeof  operator:Returns the type of a variable
 */
 
 //100+50=150 (100 & 50: The numbers (in an arithmetic operation) are called operands. and
 // + : The operation (to be performed between the two operands) is defined by an operator)
+
+const arr = [1, 12, 4];
+
+const obj = {
+  name: "vishal",
+  age: 25,
+};
+
+console.log(typeof 13); //number
+console.log(typeof "vishlal"); //string
+console.log(typeof null); //object: due to historical bug refer chatgpt
+console.log(typeof obj); //undefined
+console.log(typeof true); //booelan
+console.log(typeof arr); //array is special type of object
+console.log(typeof obj); //object
