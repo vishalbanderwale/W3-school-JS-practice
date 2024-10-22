@@ -5,7 +5,7 @@ let b = "vishal"; //string data type: every individual letter,number,symbol is a
 let str = " "; //empty string
 let str1 = "$"; //symbol string
 // we can use '' single quote|| "" double quote for strings
-let c = true || false; //boolean data type
+let c = true || false; //boolean data type (0: considered as false)
 let d = null;
 console.log(d);
 let e; //undefined
@@ -27,13 +27,10 @@ console.log(person["age"]);    // Outputs: 30
 
 const objVar = "name";
 console.log(f.a); //static
-console.log(f["color"]); 
+console.log(f["color"]);
 console.log(f[objVar]); //dynamic
 
 /*In JavaScript, an array is a special type of object that can hold multiple values in a single variable. 
 It is like a list where you can store and organize different elements (such as numbers, strings, or even other arrays) */
 
 let g = [11, "vishal", null]; //array:collection of different elements
-
-
-//
