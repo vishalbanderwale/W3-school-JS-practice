@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>input from user</title>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <!--How to take input from user in js-->
+    <input type="text" id="name" name="name" />
+    <button onclick="inputFun()">click me</button>
+    <output id="out"></output>
+    <script>
+      function inputFun() {
+        let res = document.getElementById("name").value;
+        document.getElementById("out").innerHTML = res;
+      }
+    </script>
+  </body>
+</html>
