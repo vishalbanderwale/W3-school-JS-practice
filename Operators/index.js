@@ -31,3 +31,30 @@ console.log(typeof obj); //undefined
 console.log(typeof true); //booelan
 console.log(typeof arr); //array is special type of object
 console.log(typeof obj); //object
+
+//Type conversion
+
+//When JavaScript tries to operate on a "wrong" data type,
+// it will try to convert the value to a "right" type.
+//Null value = 0;
+
+//Number conversion
+console.log(Number("123")); //123
+console.log(Number("vishal")); //NAN
+console.log(Number(" ")); // 0
+console.log(Number("99 88")); //NAN
+
+//String conversion
+
+console.log(String(123));
+console.log(String("vishal"));
+
+//Boolean to numbers
+
+console.log(Number(false));
+console.log(Number(true));
+
+//booelan to string
+
+console.log(String(false));
+console.log(String(true));
