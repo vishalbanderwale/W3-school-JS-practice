@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sample</title>
+  </head>
+  <body>
+    <p id="ex-1">hi</p>
+    <!-- <button onclick="document.getElementById('ex-1').innerHTML='hello world'">
+      change button
+    </button> -->
+
+    <button onclick="demoFun()">change button</button>
+
+    <button id="ex-2">event listener button</button>
+
+    <script>
+      function demoFun() {
+        let i = document.getElementById("ex-1");
+        console.log((i.innerHTML = "hello world"));
+      }
+
+      document.getElementById("ex-2").addEventListener("click", demoFun);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <!--DOM:Document object model
+
+//when page loads it will create the HTML DOM
+
+//with the help of HTML DOM js can access the html elements,attributes,css
+//it can change,add,remove-->
+
+    <p id="demo">id selector</p>
+
+    <!--class will return the array so we are using y[0]
+    Returns a live HTMLCollection (which updates automatically if the document changes).-->
+
+    <!-- returns a static NodeList containing those elements.
+     same like array so we use e[0] it will not update automatically if any changes -->
+
+    <p class="demo1">class-1 selector</p>
+    <p class="demo1">class-2 selector</p>
+
+    <p id="empty2">empty tag</p>
+    <p id="empty"></p>
+    <p id="demo2"></p>
+
+    <p class="query">class-1 query selector</p>
+    <p class="query">class-2 query selector</p>
+
+    <p id="cs">css colors</p>
+
+    <a href="https:www.google.com" id="link">google</a>
+
+    <script>
+      //Id selection
+      let x = document.getElementById("demo");
+      console.log((x.innerHTML = "hi "));
+
+      //class selection
+      let y = document.getElementsByClassName("demo1");
+      console.log((y[0].innerHTML = "hello"));
+
+      document.getElementById("empty").innerHTML = "empty tag1";
+
+      let z = document.getElementById("empty2");
+      document.getElementById("demo2").innerHTML = z.innerHTML;
+
+      //query selection for class(.query) for id(#query)
+      let e = document.querySelectorAll(".query");
+      console.log((e[0].innerHTML = "welcome queryselectors"));
+
+      //id selection with css
+      let f = document.getElementById("cs");
+      console.log((f.style.color = "red"));
+      console.log((f.style.fontSize = "2rem"));
+
+      //attribute selection
+      let s = document.getElementById("link");
+      console.log((s.href = "https:www.facebook.com"));
+    </script>
+  </body>
+</html>
