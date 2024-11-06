@@ -34,11 +34,25 @@ console.log(typeof obj); //object
 
 //Type conversion
 
+/* Implicit Casting (Type Coercion): JavaScript automatically converts data types 
+when it thinks it’s necessary.
+Explicit Casting: The developer manually converts data types using functions or operators. */
+
 //When JavaScript tries to operate on a "wrong" data type,
 // it will try to convert the value to a "right" type.
 //Null value = 0;
 
-//Number conversion
+// exapmples of impliict casting
+
+console.log(1 + "5"); //15
+console.log("40" + 1);  //401
+console.log("250" + 2 + 1); //25021
+console.log(24 + 2 + "345"); //26345
+console.log("sonu" + 12);  //sonu12
+
+//examples of explicit casting
+
+//string to Number conversion
 console.log(Number("123")); //123
 console.log(Number("vishal")); //NAN
 console.log(Number(" ")); // 0
@@ -46,15 +60,25 @@ console.log(Number("99 88")); //NAN
 
 //String conversion
 
-console.log(String(123));
-console.log(String("vishal"));
+console.log(String(123)); //123
+console.log(String("vishal")); //vishal
 
 //Boolean to numbers
 
-console.log(Number(false));
-console.log(Number(true));
+console.log(Number(false)); //0
+console.log(Number(true)); //1
 
 //booelan to string
 
-console.log(String(false));
-console.log(String(true));
+console.log(String(false)); // false
+console.log(String(true)); //true
+
+//string to boolean
+
+console.log(Boolean("hello")); //true
+console.log(Boolean(" ")); //false (because empty string is 0)
+
+//number to boolean
+
+console.log(Boolean(123)); //true
+console.log(Boolean(0)); //false
