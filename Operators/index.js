@@ -44,6 +44,20 @@ Explicit Casting: The developer manually converts data types using functions or 
 
 // exapmples of impliict casting
 
+//loose equality operator (==): will check only value allow type conversion
+
+console.log("5" == 5); //true (convert "5" string to number)
+console.log(5 == "5"); // true
+console.log("5" == 6); // false
+console.log(false == 0); // true (false value = 0)
+
+// strict equality operator(===): will check value abnd data type doesnot allow conversion
+
+console.log(5 === 5); // true
+console.log("5" === 5); //false
+console.log(5 === "5"); // false
+console.log("5" === 6); // false
+
 console.log(1 + "5"); //15
 console.log("40" + 1); //401
 console.log("250" + 2 + 1); //25021
@@ -86,10 +100,10 @@ console.log(Boolean(0)); //false
 // string to parseFloat and parseInt
 
 console.log(parseFloat("42.6")); //42.6
-console.log(parseFloat("23"));  // 23
+console.log(parseFloat("23")); // 23
 console.log(parseFloat("sonu")); //NAN
 
-console.log(parseInt("dad"));  // NAN
+console.log(parseInt("dad")); // NAN
 console.log(parseInt("42.6")); //42
-console.log(parseInt("23"));   //23 
-console.log(parseInt("sonu"));  // NAN
+console.log(parseInt("23")); //23
+console.log(parseInt("sonu")); // NAN
