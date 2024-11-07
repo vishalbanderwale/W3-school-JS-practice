@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+    <style>
+      input:focus {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!--A JavaScript can be executed when an event occurs, like when a user clicks on an HTML element.-->
+    <!--when events happen, you may want to do something-->
+    <!--events:onchange,onclick,onload,onsubmit  many more refer w3 schools for more-->
+    <!--when input is changes onchange event as occured-->
+    <!--when button is clicked onclick event as oocured-->
+    <!--event will be performed by browser: on load , resize  and users: onclick-->
+
+    <!--when events happens event handler perform some task like call fun,exceute code ... -->
+    <h1>hello world</h1>
+    <!-- <button
+      id="btn"
+      onclick="document.getElementById('btn').innerHTML='change button'"
+    >
+      click me
+    </button> -->
+    <!--pointing to same element we can use this(keyword:is an object)-->
+    <button onclick="this.innerHTML='change btn'">click me</button>
+
+    <input type="text" name="fullname" onchange="this.style.color='blue'" />
+
+    <!--document.getElementById("myBtn").onclick = displayDate; -->
+    <!--The HTML DOM allows you to assign events to HTML elements using JavaScript:-->
+
+    <!--In HTML onclick is the event listener, myFunction is the event handler:-->
+    <!--directly adding event handler using attribute onclick-->
+    <!--<button onclick="myFunction()">Click me</button>-->
+
+    <!--In JS Click is event and myFunction is event handler -->
+    <!--Note that you don't use the "on" prefix for the event; use "click" instead of "onclick".-->
+    <!--button.addEventListener("click", myFunction);-->
+    <!--event handler is a function : block of code it excutes when some event occurs-->
+    <!--when some event click happens event handler will exceute-->
+    <!--addEventListener is a method used to add event handler to the element-->
+
+    <!--element.addEventListener(event like onclick,onchange, function, useCapture);-->
+    <!--useCapture is booelan: true,false-->
+    <!--whether to use event bubbling or event capturing. This parameter is optional.-->
+    <!--by default value is false:event bubbling : p is handled first than div  -->
+    <!--for true:event capturing : first div is handled than p-->
+  </body>
+</html>
